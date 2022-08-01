@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specjały z północnego Mazowsza</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class='row'>
+      <div class='column'>
+        <div class='first-column'>
+          <div class="info-wrap">
+            <a class="info" href="info.html">INOFRMACJE</a>
+          </div>
+          <div class="logo"><img src="images/logo.png" alt="logo"></div>
+          <div class="title">Specjały z północnego Mazowsza</div>
+          <div class="desc-text">Specjały z północnego Mazowsza! Oferujemy świeże produkty w dobrych cenach. Witamy na
+            naszej
+            stronie gdzie możesz kupić olej z nasion słonecznika, jajka kurze,
+            ziemniaki, sok malinowy, ogórki kiszone, miód rzepakowy i miód
+            wielokwiatowy. Pobierz naszą aplikację aby być z nami w stałym
+            kontakcie. </div>
+          <div class="offer-wrap">
+            <div class="offer-title">Oferujemy:</div>
+
+            <div class="product">
+              <div class="product-wrap">Olej z nasion <br>słonecznika <p class="price"> cena: 25zł/0,1l <span
+                    class="sp-one"> Dostępne
+                  </span>/
+                  <span>Niedostępne</span>
+                </p>
+
+              </div>
+              <div class="footer-wrap">
+                <a href="tel:+48 724 100 451">
+                  <div class="phone">telefon: +48 724 100 451</div>
+                </a>
+                <button class="order-btn" id="honeyBtn">KUP TERAZ</button>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">Jaja kurze<p class="price"> cena: 1,20zł/szt. <span class="sp-one"> Dostępne
+                  </span>/
+                  <span>Niedostępne</span>
+                </p>
+
+              </div>
+              <div class="footer-wrap">
+                <a href="tel:+48 502 174 881">
+                  <div class="phone">telefon: +48 502 174 881</div>
+                </a>
+                <button class="order-btn" id="strawBtn">KUP TERAZ</button>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">Ziemniaki<p class="price"> cena: 2zł/kg <span class="sp-one"> Dostępne
+                  </span>/
+                  <span>Niedostępne</span>
+                </p>
+
+              </div>
+
+              <div class="footer-wrap">
+                <a href="tel:+48 508 518 268">
+                  <div class="phone">telefon: +48 508 518 268</div>
+                </a>
+                <button class="order-btn" id="plumBtn">KUP TERAZ</button>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">Sok malinowy<p class="price"> cena: 25zł/1l <span class="sp-one"> Dostępne
+                  </span>/
+                  <span>Niedostępne</span>
+                </p>
+
+              </div>
+              <div class="product-wrap">Ogórki kiszone<p class="price"> cena: 12zł/kg <span class="sp-one"> Dostępne
+                  </span>/
+                  <span>Niedostępne</span>
+                </p>
+              </div>
+              <div class="footer-wrap">
+                <a href="tel:+48 512 509 406">
+                  <div class="phone">telefon: +48 512 509 406</div>
+                </a>
+                <button class="order-btn" id="cherryBtn">KUP TERAZ</button>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">Miód rzepakowy<p class="price"> cena: 60zł/0,9l <span class="sp-one">
+                    Dostępne </span>/
+                  <span>Niedostępne</span>
+                </p>
+
+              </div>
+              <div class="product-wrap">Miód wielokwiatowy<p class="price"> cena: 60zł/0,9l
+                  <span class="sp-one"> Dostępne </span>/
+                  <span>Niedostępne</span>
+                </p>
+
+              </div>
+              <div class="footer-wrap">
+                <a href="tel:+48 512 509 406">
+                  <div class="phone">telefon: +48 606 283 408</div>
+                </a>
+                <button class="order-btn" id="honey">KUP TERAZ</button>
+              </div>
+            </div>
+          </div>
+
+          <a href="/app/app-debug.apk" download><button class="app-btn">Pobierz Aplikację</button></a>
+
+        </div>
+      </div>
+      <div class='column'>
+        <div class='second-column'>
+          <img src="images/sunflower.webp">
+          <img src="images/raspberry.webp">
+          <img src="images/bee.webp">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="honeyModal" class="modal">
+    <!-- HONEY Modal content -->
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="contact-form-title">Złóż zamówienie</div>
+
+      <form name="formoil" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')"
+        data-netlify="true">
+
+        <input type="text" id="company" name="company" placeholder="Wpisz imię" required />
+        <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required />
+        <input type="text" id="mail" name="mail" placeholder="Wpisz e-mail" required />
+        <textarea id="message-content" name="message" placeholder="Złóż zamówienie (wpisz ilość oraz nazwę produktu)"
+          rows="4" cols="50" required></textarea>
+
+        <input type="submit" id="btnSend" name="submit" value="WYŚLIJ" />
+      </form>
+    </div>
+
+  </div>
+
+  <div id="strawModal" class="modal">
+    <!-- STRAWBERRIES Modal content -->
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="contact-form-title">Złóż zamówienie</div>
+
+      <form name="formeggs" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')"
+        data-netlify="true">
+
+        <input type="text" id="company" name="company" placeholder="Wpisz imię" required />
+        <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required />
+        <input type="text" id="mail" name="mail" placeholder="Wpisz e-mail" required />
+        <textarea id="message-content" name="message" placeholder="Złóż zamówienie (wpisz ilość oraz nazwę produktu)"
+          rows="4" cols="50" required></textarea>
+
+        <input type="submit" id="btnSend" name="submit" value="WYŚLIJ" />
+      </form>
+    </div>
+
+  </div>
+
+  <div id="plumModal" class="modal">
+    <!-- PLUM Modal content -->
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="contact-form-title">Złóż zamówienie</div>
+
+      <form name="formpotato" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')"
+        data-netlify="true">
+
+        <input type="text" id="company" name="company" placeholder="Wpisz imię" required />
+        <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required />
+        <input type="text" id="mail" name="mail" placeholder="Wpisz e-mail" required />
+        <textarea id="message-content" name="message" placeholder="Złóż zamówienie (wpisz ilość oraz nazwę produktu)"
+          rows="4" cols="50" required></textarea>
+
+        <input type="submit" id="btnSend" name="submit" value="WYŚLIJ" />
+      </form>
+    </div>
+
+  </div>
+
+  <div id="cherryModal" class="modal">
+    <!-- CHERRY Modal content -->
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="contact-form-title">Złóż zamówienie</div>
+
+      <form name="formjuice" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')"
+        data-netlify="true">
+
+        <input type="text" id="company" name="company" placeholder="Wpisz imię" required />
+        <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required />
+        <input type="text" id="mail" name="mail" placeholder="Wpisz e-mail" required />
+        <textarea id="message-content" name="message" placeholder="Złóż zamówienie (wpisz ilość oraz nazwę produktu)"
+          rows="4" cols="50" required></textarea>
+
+        <input type="submit" id="btnSend" name="submit" value="WYŚLIJ" />
+      </form>
+    </div>
+
+  </div>
+
+  <div id="lastModal" class="modal">
+    <!-- CHERRY Modal content -->
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="contact-form-title">Złóż zamówienie</div>
+
+      <form name="formhoney" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')"
+        data-netlify="true">
+
+        <input type="text" id="company" name="company" placeholder="Wpisz imię" required />
+        <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required />
+        <input type="text" id="mail" name="mail" placeholder="Wpisz e-mail" required />
+        <textarea id="message-content" name="message" placeholder="Złóż zamówienie (wpisz ilość oraz nazwę produktu)"
+          rows="4" cols="50" required></textarea>
+
+        <input type="submit" id="btnSend" name="submit" value="WYŚLIJ" />
+      </form>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
