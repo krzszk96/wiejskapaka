@@ -46,6 +46,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 100%;
 }
 
 @media (max-width: 992px) {
@@ -144,13 +145,6 @@ body {
 
 .euro img {
   width: 100%;
-}
-
-@media (max-width: 576px) {
-  .euro img {
-    margin: 0 10px;
-    width: 95%;
-  }
 }
 
 .title {

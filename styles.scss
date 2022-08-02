@@ -36,6 +36,7 @@ body {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  width: 100%;
 
   @media (max-width: $lg) {
     flex: auto;
@@ -105,8 +106,8 @@ body {
 .euro img {
   width: 100%;
   @media (max-width: $sm) {
-    margin: 0 10px;
-    width: 95%;
+    // margin: 0 10px;
+    // width: 95%;
   }
 }
 .title {
