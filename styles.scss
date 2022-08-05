@@ -101,7 +101,7 @@ body {
 }
 .logo img {
   border-radius: 5px;
-  width: 150px;
+  width: 250px;
 }
 .euro img {
   width: 100%;
@@ -216,6 +216,12 @@ body {
 }
 .product-wrap p span:nth-child(1) {
   color: #98dc2b;
+}
+.sp-red{
+  color: rgb(255, 85, 85);
+}
+.sp-white{
+  color: white !important;
 }
 .product-wrap {
   display: flex;
@@ -468,5 +474,12 @@ input[type="submit"] {
 
   &:hover {
     transform: scale(1.2);
+  }
+}
+.gallery{
+
+  &__row{
+    display: flex;
+    justify-content: center;
   }
 }

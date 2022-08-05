@@ -140,7 +140,7 @@ body {
 
 .logo img {
   border-radius: 5px;
-  width: 150px;
+  width: 250px;
 }
 
 .euro img {
@@ -289,6 +289,14 @@ body {
 
 .product-wrap p span:nth-child(1) {
   color: #98dc2b;
+}
+
+.sp-red {
+  color: #ff5555;
+}
+
+.sp-white {
+  color: white !important;
 }
 
 .product-wrap {
@@ -670,5 +678,14 @@ input[type="submit"] {
 input[type="submit"]:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.gallery__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=styles.css.map */
