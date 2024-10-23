@@ -43,13 +43,24 @@ span.onclick = function() {
   honeyModal.style.display = "none";
 }
 
-//last
+//fish
 var fishModal = document.getElementById("fishModal"); 
-var btnc = document.getElementById("honey"); 
-btnc.onclick = function() {
+var btnf = document.getElementById("fishBtn"); 
+btnf.onclick = function() {
   fishModal.style.display = "block";
 }
 var span = document.getElementsByClassName("close")[4];
 span.onclick = function() {
   fishModal.style.display = "none";
+}
+
+//oil
+var oilModal = document.getElementById("oilModal"); 
+var btno = document.getElementById("oilBtn"); 
+btno.onclick = function() {
+  oilModal.style.display = "block";
+}
+var span = document.getElementsByClassName("close")[5];
+span.onclick = function() {
+  oilModal.style.display = "none";
 }

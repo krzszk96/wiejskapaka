@@ -116,7 +116,22 @@
                 <a href="tel:+48 609 221 594">
                   <div class="phone">telefon: +48 609 221 594</div>
                 </a>
-                <button class="order-btn" id="honey">KUP TERAZ</button>
+                <button class="order-btn" id="fishBtn">KUP TERAZ</button>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">Olej rzepakowy<p class="price"> cena: uzgadniana indywidualnie <span class="sp-one">
+                    Dostępne </span>/
+                  <span>Niedostępne</span>
+                </p>
+
+              </div>
+              <div class="footer-wrap">
+                <a href="tel:+48 661 584 558">
+                  <div class="phone">telefon: +48 661 584 558</div>
+                </a>
+                <button class="order-btn" id="oilBtn">KUP TERAZ</button>
               </div>
             </div>
           </div>
@@ -248,6 +263,29 @@
       <div class="contact-form-title">Złóż zamówienie</div>
 
       <form name="fishform" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')"
+        data-netlify="true">
+
+        <input type="text" id="company" name="company" placeholder="Wpisz imię" required />
+        <input type="text" id="name" name="name" placeholder="Wpisz nazwisko" required />
+        <input type="text" id="mail" name="mail" placeholder="Wpisz e-mail" required />
+        <textarea id="message-content" name="message" placeholder="Złóż zamówienie (wpisz ilość oraz nazwę produktu)"
+          rows="4" cols="50" required></textarea>
+
+        <input type="submit" id="btnSend" name="submit" value="WYŚLIJ" />
+      </form>
+    </div>
+
+  </div>
+
+  <div id="oilModal" class="modal">
+    <!-- OIL Modal content -->
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="contact-form-title">Złóż zamówienie</div>
+
+      <form name="oilform" method="POST" id="form" onsubmit="return confirm('Czy na pewno przesłać formularz?')"
         data-netlify="true">
 
         <input type="text" id="company" name="company" placeholder="Wpisz imię" required />
